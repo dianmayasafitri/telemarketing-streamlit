@@ -69,7 +69,6 @@ def main():
     }])
 
     if st.button("Predict"):
-        st.write(f"sklearn runtime version: {sklearn.__version__}")
         pred = model.predict(input_df)[0]
         prob = model.predict_proba(input_df)[0][1]
 
@@ -80,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
